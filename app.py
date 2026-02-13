@@ -7,6 +7,8 @@ from embeddings import get_jina_embeddings
 from vision import describe_image
 from chunking import chunk_text
 from retriever import FAISSRetriever
+from reranker import simple_rerank
+
 
 
 
@@ -188,3 +190,4 @@ if txt_file and groq_key and jina_key:
 else:
 
     st.info("Upload a document and provide API keys to begin.")
+
