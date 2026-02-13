@@ -1,8 +1,8 @@
 streamlit
-faiss-cpu
-numpy
 groq
-easyocr
+faiss-cpu
+python-dotenv
+pypdf
 pillow
 requests
-pypdf
+numpy
