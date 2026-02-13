@@ -6,3 +6,4 @@ pypdf
 pillow
 requests
 numpy
+
