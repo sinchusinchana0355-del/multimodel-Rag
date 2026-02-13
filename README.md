@@ -35,8 +35,6 @@ Session memory with recent chat history
 
 Latency tracking displayed in the UI
 
-Metadata filtering (retrieve text-only, image-only, or both)
-
 Architecture Overview
 User uploads a document (TXT/PDF)
 Text is chunked with overlap for better retrieval
@@ -46,6 +44,7 @@ All chunks are embedded using Jina Embeddings v4
 FAISS retrieves the most relevant context
 Retrieved chunks are reranked
 Groq LLM generates an answer grounded in retrieved context
+
 Project Structure
 multimodal-rag-jina4/
 ├── app.py
@@ -60,3 +59,6 @@ multimodal-rag-jina4/
     ├── vision.py
     ├── reranker.py
     └── llm.py
+
+Metadata filtering (retrieve text-only, image-only, or both)
+
