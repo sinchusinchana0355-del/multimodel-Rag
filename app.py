@@ -8,6 +8,8 @@ from vision import describe_image
 from chunking import chunk_text
 from retriever import FAISSRetriever
 from reranker import simple_rerank
+from llm import ask_llm
+
 
 
 
@@ -190,4 +192,5 @@ if txt_file and groq_key and jina_key:
 else:
 
     st.info("Upload a document and provide API keys to begin.")
+
 
